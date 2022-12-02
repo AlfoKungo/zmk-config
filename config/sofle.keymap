@@ -15,24 +15,25 @@
     macros {
             left_bounce: left_bounce {
                 label = "ZM_left_bounce";
-            compatible = "zmk,behavior-macro";
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LSHFT>
-                ;
+                #binding-cells = <0>;
+                compatible = "zmk,behavior-macro";
+                bindings
+                    = <&macro_press &kp LSHFT>
+                    , <&macro_tap &kp LEFT>
+                    , <&macro_release &kp LSHFT>
+                    ;
 
-        };
-        right_bounce: right_bounce {
-            label = "ZM_right_bounce";
-            #binding-cells = <0>;
-            compatible = "zmk,behavior-macro";
-            bindings
-                = <&kp LSHFT>
-                , <&kp RIGHT>
-                ;
+            };
+            right_bounce: right_bounce {
+                label = "ZM_right_bounce";
+                #binding-cells = <0>;
+                compatible = "zmk,behavior-macro";
+                bindings
+                    = <&kp LSHFT>
+                    , <&kp RIGHT>
+                    ;
 
-        };
+            };
     };
 };
 
