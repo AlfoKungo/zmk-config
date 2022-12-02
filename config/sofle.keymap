@@ -14,16 +14,19 @@
 / {
     macros {
             left_bounce: left_bounce {
+                wait-ms = <1>;
                 label = "ZM_left_bounce";
                 #binding-cells = <0>;
                 compatible = "zmk,behavior-macro";
                 bindings
-                    = <&kp LALT>
-                    , <&kp LEFT>
+                    = <&macro_press &kp LALT>
+                    , <&macro_tap &kp LEFT>
+                    , <&macro_release &kp LALT>
                     ;
 
             };
             right_bounce: right_bounce {
+                wait-ms = <0>;
                 label = "ZM_right_bounce";
                 #binding-cells = <0>;
                 compatible = "zmk,behavior-macro";
