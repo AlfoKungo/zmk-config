@@ -28,7 +28,7 @@
             };
             right_bounce: right_bounce {
                 label = "ZM_right_bounce";
-                wait-ms = <1>;
+                wait-ms = <0>;
                 #binding-cells = <0>;
                 compatible = "zmk,behavior-macro";
                 bindings
