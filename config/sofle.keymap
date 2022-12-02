@@ -14,8 +14,9 @@
 / {
     macros {
             left_bounce: left_bounce {
-                wait-ms = <1>;
                 label = "ZM_left_bounce";
+                wait-ms = <0>;
+
                 #binding-cells = <0>;
                 compatible = "zmk,behavior-macro";
                 bindings
@@ -26,13 +27,14 @@
 
             };
             right_bounce: right_bounce {
-                wait-ms = <0>;
                 label = "ZM_right_bounce";
+                wait-ms = <1>;
                 #binding-cells = <0>;
                 compatible = "zmk,behavior-macro";
                 bindings
-                    = <&kp LALT>
-                    , <&kp RIGHT>
+                    = <&macro_press &kp LALT>
+                    , <&macro_tap &kp RIGHT>
+                    , <&macro_release &kp LALT>
                     ;
 
             };
