@@ -25,6 +25,7 @@
         };
         right_bounce: right_bounce {
             label = "ZM_right_bounce";
+            #binding-cells = <0>;
             compatible = "zmk,behavior-macro";
             bindings
                 = <&kp LSHFT>
