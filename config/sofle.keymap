@@ -14,6 +14,7 @@
 / {
     macros {
             left_bounce: left_bounce {
+                label = "ZM_left_bounce";
             compatible = "zmk,behavior-macro";
             bindings
                 = <&macro_press &kp LSHFT>
@@ -23,6 +24,7 @@
 
         };
         right_bounce: right_bounce {
+            label = "ZM_right_bounce";
             compatible = "zmk,behavior-macro";
             bindings
                 = <&kp LSHFT>
