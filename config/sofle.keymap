@@ -21,7 +21,7 @@
                 , <&macro_release &kp LSHFT>
                 ;
 
-        }
+        };
         right_bounce: right_bounce {
             compatible = "zmk,behavior-macro";
             bindings
